@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS Example with Sidebar</title>
+    <style>
+        body{
+            color: white;
+            margin: 10px;
+            padding: 10;
+            font-size: 16px;
+            line-height: 1.5em;
+            background-image: url("Maravilla.jpg");
+            background-size: cover;
+        }
+        img{
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            border-radius: 30px;
+        }
+        header{
+            width: 20px;
+            height: 70px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            margin: 5px;
+            font-size: 10px;
+        }
+        .sidebar{
+            margin: 10px;
+            padding: 0 20px;
+            text-align: right;
+        }
+        .sidebar ul{
+            list-style: none;
+            margin: 0;
+            font-size: 18px;
+            display: inline;
+        }
+        .sidebar li{
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .sidebar a{
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background-color: lightgray;
+        }
+        section{
+            text-align: center;
+            font-size: 20px;
+            padding: 50px;
+            margin: 50px;
+        }
+        section h2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 60px;
+            color: black;
+            padding: 40px;
+            margin: 10px;
+            line-height: 1.5em;
+        }
+        section p{
+            font-family:cursive;
+            font-size: 40px;
+            color: black;
+            padding: 20px;
+            margin: auto;
+            text-decoration:dotted;
+        }
+        .beachSidebar h2{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo2.png"/>
+        <h1>Maravilla Tabuelan Cebu</h1>
+    </header>
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="#Home"></a>
+                    <select>
+                    <option selected>Home</option>
+                    <option>Welcome Message</option>
+                    </select>
+                </li>
+                <li><a href="#Services"></a>
+                    <select>
+                        <option selected>Services</option>
+                        <option>Accommodations</option>
+                        <option>Inquires</option>
+                        <option>Costumers Feedbacks</option>
+                    </select>
+                </li>
+                <li><a href="#Rooms"></a>
+                    <select>
+                        <option selected>Rooms</option>
+                        <option>Room Capacity</option>
+                        <option>Room Rates</option>
+                    </select>
+                </li>
+                <li><a href="#Contact"></a>
+                    <select>
+                        <option selected>Contact</option>
+                        <option>09721573546</option>
+                        <option>Facebook</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>WELCOME TO MARAVILLA BEACH RESORT</h2>
+                <p>Come and visit to Maravilla Beach Resort to take away your stress.</p>
+            </section>
+        </main>
+        <div class="beachSidebar" id="beachSidebar">
+            <h2>Online Book</h2>
+            <form action="#">
+                <label for="fullName">Complete Name: <br></label>
+                <input type="text" name="fullName"required/>
+                <br>
+                <label for="date">Date to book: <br></label>
+                <input type="text" name="date"required/>
+                <br>
+                <label for="pax">Persons Capacity: <br></label>
+                <input type="text" name="pax"required/>
+                <br>
+                <button type="book">Confirm</button>
+                <button type="reset">Cancel</button>
+        <div>
+            </form>
+        </div>
+    <footer>
+        <p>&copy; 2024 Maravilla Tourism</p>
+    </footer>
+</body>
+</html>
